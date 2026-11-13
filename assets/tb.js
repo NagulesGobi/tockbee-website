@@ -4,7 +4,7 @@
   'use strict';
   // The one place for the App Store link. Replace it with the real link when Apple gives it
   // (apps.apple.com/...); every [data-appstore] link on every page uses it.
-  var APP_STORE_URL = 'https://dotxline.com/tockbee.html';
+  var APP_STORE_URL = '';
   var d = document, root = d.documentElement;
   var RM = matchMedia('(prefers-reduced-motion: reduce)');
   var clamp = function (v) { return Math.max(0, Math.min(1, v)); };

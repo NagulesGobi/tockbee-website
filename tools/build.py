@@ -82,7 +82,7 @@ def dock(cur):
     <nav class="dock__links" id="dock-links" aria-label="Main">{links}</nav>
     <button class="icon-btn theme-btn" type="button" aria-label="Switch light and dark"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></button>
     <button class="icon-btn dock__menu" type="button" aria-expanded="false" aria-controls="dock-links" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
-    <a class="btn btn--primary" href="#get" data-appstore>{APPLE}<span class="lbl-long">Get&nbsp;</span>Tockbee</a>
+    <a class="btn btn--primary" href="#get">Coming soon</a>
   </div>
 </header>'''
 
@@ -90,8 +90,8 @@ FOOTER = f'''<footer class="footer closing footer--dark ground-inverse" id="get"
   <div class="wrap">
     <div class="closing__cta close--word">
       <div class="section-head--split">
-        <div><h2 id="close-h">Every hour you work, on the record</h2><p class="t-lead">Tockbee for iPhone. No account, no ads, no tracking.</p></div>
-        <a class="btn btn--primary" href="#get" data-appstore>{APPLE}Get Tockbee</a>
+        <div><h2 id="close-h">Every hour you work, on the record</h2><p class="t-lead">Tockbee is coming soon for iPhone and Android. No account, no ads, no tracking. Questions or ideas? Write to us.</p></div>
+        <a class="btn btn--primary" href="mailto:hello@dotxline.com?subject=Tockbee">Write to us</a>
       </div>
       <p class="close__word" aria-hidden="true">tockbee</p>
     </div>
@@ -201,7 +201,7 @@ HERO = f'''  <section class="hero tb-hero" data-enter aria-labelledby="hero-h">
         <p class="t-label tb-k hero__fact">iPhone · UK hourly and shift workers · Data not collected</p>
         <h1 id="hero-h">Shift and pay tracker for UK workers</h1>
         <p class="t-lead measure">Tockbee keeps your own record of every hour you work, so you can check your payslip and sort out missing pay.</p>
-        <div class="btn-row"><a class="btn btn--primary" href="#get" data-appstore>{APPLE}Get Tockbee</a><a class="btn btn--secondary" href="#story">What the logo means</a></div>
+        <div class="btn-row"><a class="btn btn--primary" href="#get">Coming soon</a><a class="btn btn--secondary" href="#story">What the logo means</a></div>
       </div>
       <div class="span-5 start-8 tb-hero__ph">
         <div class="tb-orbit" aria-hidden="true">{MARK}</div>
@@ -351,7 +351,7 @@ FAQ = [('Do I need an account?', 'No. Open Tockbee and start. There is nothing t
        ('Why does Tockbee ask for location “Always”?', 'Only to notice when you arrive at or leave a work site you created, so it can clock you in and out. There is no continuous tracking and your location never leaves your phone. You can use work Wi-Fi or the Clock button instead.'),
        ('Are the tax figures exact?', 'No. Take-home is an estimate after tax, National Insurance, student loan and pension. Your payslip is the official figure.'),
        ('Where is my data?', 'In the app’s own storage on your phone. Backups go only to a folder you pick, such as your own iCloud Drive.'),
-       ('Is there an Android version?', 'Tockbee is built for iPhone and Android from one codebase. Android is coming soon.')]
+       ('When can I get Tockbee?', 'Tockbee is coming soon for iPhone and Android. Write to hello@dotxline.com and we will tell you when it is ready.')]
 SUPPORT = page_head('Support', 'Tockbee support and questions',
     'Questions or ideas? Write to us. Include your iPhone model, iOS version and what happened.',
     '<div class="span-4 start-9 tb-contact" data-tb-tick><small>Email us</small><a class="link" href="mailto:hello@dotxline.com?subject=Tockbee%20support">hello@dotxline.com</a><p>dotXline LTD, Cardiff, United Kingdom</p></div>') + f'''
@@ -359,7 +359,7 @@ SUPPORT = page_head('Support', 'Tockbee support and questions',
     <div class="wrap grid">
       <div class="span-5 stack-4">
         <h2 id="faq-h" data-tb-tick>Tockbee details</h2>
-        <ul class="rows rows--spec"><li><span class="rows__name">Device</span><span class="rows__value">iPhone, iOS 26 and later</span></li><li><span class="rows__name">Made for</span><span class="rows__value">UK hourly and shift workers</span></li><li><span class="rows__name">Category</span><span class="rows__value">Finance</span></li><li><span class="rows__name">Privacy</span><span class="rows__value">Data not collected</span></li><li><span class="rows__name">Android</span><span class="rows__value">Coming soon</span></li></ul>
+        <ul class="rows rows--spec"><li><span class="rows__name">Device</span><span class="rows__value">iPhone, iOS 26 and later</span></li><li><span class="rows__name">Made for</span><span class="rows__value">UK hourly and shift workers</span></li><li><span class="rows__name">Category</span><span class="rows__value">Finance</span></li><li><span class="rows__name">Privacy</span><span class="rows__value">Data not collected</span></li><li><span class="rows__name">Availability</span><span class="rows__value">iPhone and Android, coming soon</span></li></ul>
       </div>
       <div class="span-7 start-6 faq">{''.join(f'<div class="faq__item" data-tb-tick><h3>{q}</h3><p>{a}</p></div>' for q, a in FAQ)}</div>
     </div>
