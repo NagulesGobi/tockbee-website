@@ -368,7 +368,7 @@ SUPPORT = page_head('Support', 'Tockbee support and questions',
 write('support.html', 'Support: Tockbee', 'Help for Tockbee: contact, location, tax estimates, your data and Android.', SUPPORT)
 
 # ---------- privacy policy: from the App Store privacy label and review notes (docs/app-store.md) ----------
-PRIV = '''<h1>Privacy Policy</h1><p class="meta">Tockbee is made by dotXline LTD. Draft for the owner's review, November 2026.</p>
+PRIV = '''<h1>Privacy Policy</h1><p class="meta">Tockbee is made by dotXline LTD. Last updated: 13 November 2026.</p>
 <h2>Data not collected</h2><p>Tockbee has no account, no server, no analytics and no third-party tools that collect data. Your shifts, pay, work sites and settings stay in the app’s own storage on your phone.</p>
 <h2>Location</h2><p>If you choose clock-in by location, Tockbee uses your phone’s region monitoring around the work sites you create, to clock you in and out. There is no continuous tracking, and your location is never sent off your phone. You can use your work Wi-Fi or the Clock button instead.</p>
 <h2>Backups and exports</h2><p>Backups go only to a folder you pick, such as your own iCloud Drive. Timesheets you export (PDF or CSV) go wherever you choose to share or save them.</p>
